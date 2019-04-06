@@ -10,7 +10,7 @@ overflow: hidden;
      window.orientation == 0;
    } */
 
-*@media screen and (orientation:landscape) {
+@media screen and (orientation:landscape) {
          window.orientation == -90;
          window.orientation == 90;
    }
