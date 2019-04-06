@@ -76,30 +76,6 @@ console.log(e.keyCode);
 draw()
 })
 
-//web orientation (possibly handled in css file)
-
-// function canvasSize(){
-//  canvas.width = window.innerWidth;
-//  canvas.height = window.innerHeight;
-
-// function initialize(){
-//     window.addEventListener('resize', resizeCanvas, false);
-//     resizeCanvas();
-// }
-//
-// function redraw() {
-//     ctx.strokeStyle = 'black';
-//     ctx.lineWidth = '2';
-//     ctx.strokeRect(0,0, window.innerWidth, window.innerHeight);
-//     }
-//
-// function resizeCanvas() {
-//     canvas.width = window.innerWidth;
-//     canvas.height = window.innerHeight;
-//     redraw();
-// }
-
-
 
 //mobile orientation
 
@@ -111,39 +87,19 @@ draw()
 
 
 //mobile touchscreen
-canvas.width = window.innerWidth*0.8;
-canvas.height = window.innerHeight*0.8;
 
-canvas.ontouchstart = touchScreen;
-
-function touchScreen
-
-
-// canvas.addEventListener('touchmove', touchscreen, event.preventDefault())
-// function touchscreen(move) {
-//     getTouchPosition(move);
-//     drawCircle(ctx, touchX, touchY, 8);
-// }
+canvas.addEventListener('touchmove', touchscreen, event.preventDefault())
+function touchscreen(move) {
+    getTouchPosition(move);
+    drawCircle(ctx, touchX, touchY, 8);
+}
 
 
-// canvas.addEventListener('ontouchstart', function (e){
-//   e.preventDefault();
-//   brushMove();
-// }, false);
-//
 // canvas.addEventListener('touchmove', function(event) {
 //     x = event.pageX;
 //     y = event.pageY;
 // }, false);
-//
-//
-// canvas.addEventListener('ontouchmove', function (e) {
-//     getTouchPos();
-//     drawDot(ctx, touchX, touchY, 12);
-//     event.preventDefault();
-// })
 
-//canvas.addEventListener('ontouchend', function (e) {
 
 
 </script>

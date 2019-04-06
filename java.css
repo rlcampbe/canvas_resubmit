@@ -1,0 +1,20 @@
+/* html body{
+overflow: hidden;
+} */
+
+#canvas {
+  max-width: 100%;
+  height: auto;
+
+/* @media screen and (orientation:portrait) {
+     window.orientation == 0;
+   } */
+
+/**@media screen and (orientation:landscape) {
+         window.orientation == -90;
+         window.orientation == 90;
+   } */
+
+/* @media screen and (min-width:600px) {
+
+} */
