@@ -88,6 +88,11 @@ draw()
 
 //mobile touchscreen
 
+canvas.addEventListener('ontouchstart', function (e){
+  e.preventDefault();
+  brushMove();
+}, false);
+
 canvas.addEventListener('touchmove', touchscreen, event.preventDefault())
 function touchscreen(move) {
     getTouchPosition(move);
