@@ -3,18 +3,20 @@ overflow: hidden;
 } */
 
 #canvas {
+   winHeight = ${window.innerHeight*0.8}px
+   winWidth = ${window.innerWidth*0.8}px
+}
+
+
+#canvas {
   max-width: 100%;
   height: auto;
+}
 
 /* @media screen and (orientation:portrait) {
      window.orientation == 0;
    } */
 
-@media screen and (orientation:landscape) {
-         window.orientation == -90;
-         window.orientation == 90;
-   }
-
-/* @media screen and (min-width:600px) {
-
-} */
+@media screen and (orientation: auto){
+    canvas.orientation == 0;
+};

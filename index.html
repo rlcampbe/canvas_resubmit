@@ -79,11 +79,11 @@ draw()
 
 
 //mobile version
+	// Touch Events
+canvas.addEventListener('touchstart', theStart, false);
+// canvas.addEventListener('touchend', theEnd, false);
+canvas.addEventListener('touchmove', theMove, false);
 
-
-// drawIt = {
-// 		started: false,
-// 		start:
 function theStart(evt) {
     ctx.beginPath();
     ctx.moveTo(
@@ -91,11 +91,8 @@ function theStart(evt) {
 		evt.touches[0].pageY
 			);
 
-			//this.started = true;
-
-
 		}
-//move: function(evt) {
+
 function theMove(events){
        ctx.lineTo(
 				events.touches[0].pageX,
@@ -107,23 +104,15 @@ function theMove(events){
 				ctx.stroke();
 			}
 
-function theEnd(eee){
-   this.started = false
-}
+// // function theEnd(eee){
+// //    this.started = false
+// }
 
-	// 	end: function(evt) {
-	// 		this.started = false;
-	// 	}
-	// };
 
-	// Touch Events
-	canvas.addEventListener('touchstart', theStart, false);
-	//canvas.addEventListener('touchend', drawIt.end, false);
-	canvas.addEventListener('touchmove', theMove, false);
 
 	// Disable Page Move
 
-
+//to do: change the size of the screen, disable page move
 
 
 //mobile orientation
