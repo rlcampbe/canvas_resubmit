@@ -3,8 +3,8 @@ overflow: hidden;
 } */
 
 #canvas {
-   winHeight = ${window.innerHeight*0.8}px
-   winWidth = ${window.innerWidth*0.8}px
+   h = ${window.innerHeight*0.8}px;
+   w = ${window.innerWidth*0.8}px;
 }
 
 
